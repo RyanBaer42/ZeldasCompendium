@@ -1,6 +1,7 @@
 import { useEffect, useState,  } from 'react';
-import { Route, Switch } from "react-router-dom";
+
 import fetchData from '../../ApiCalls';
+import CardContainer from '../CardContainer/CardContainer';
 import './App.css';
 
 function App() {
@@ -11,21 +12,24 @@ function App() {
   useEffect(() => {
     fetchData()
       .then(data => {
-        setItems(data)
+        setItems(data.data)
         setLoading(false)
+        console.log(items)
       })
       .catch(error => {
         setError(error)
       })
   }, [])
 
-  return (
-    <div>
-      <NavBar />
-      <SearchForm />
-      <CardContainer />
-    </div>
-  )
+  if (!loading){
+    return (
+      <div>
+        {/* <NavBar />
+        <SearchForm /> */}
+        <CardContainer items={items}/>
+      </div>
+    )
+  }
 }
 
 export default App;
