@@ -1,9 +1,15 @@
+@font-face {
+    src: url(../../Fonts/HyliaSerif.ttf);
+    font-family: nos;
+}
+
 .item-card {
- background-color: lightgray;
- display: flex;
- flex-direction: column;
- align-items: center;
- border-radius: 10px;
+    font-family: nos;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
 }
 
 .item-image {

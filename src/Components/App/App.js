@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import fetchData from '../../ApiCalls';
 import CardContainer from '../CardContainer/CardContainer';
 import NavBar from '../NavBar/NavBar';
+import SearchForm from '../SearchForm/SearchForm';
 import './App.css';
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
     return (
       <div className='App'>
         <NavBar />
-        {/* <SearchForm /> */}
+        <SearchForm />
         <CardContainer items={items}/>
       </div>
     )
