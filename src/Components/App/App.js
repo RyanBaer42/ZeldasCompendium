@@ -14,7 +14,6 @@ function App() {
       .then(data => {
         setItems(data.data)
         setLoading(false)
-        console.log(items)
       })
       .catch(error => {
         setError(error)
@@ -23,7 +22,7 @@ function App() {
 
   if (!loading){
     return (
-      <div>
+      <div className='App'>
         {/* <NavBar />
         <SearchForm /> */}
         <CardContainer items={items}/>

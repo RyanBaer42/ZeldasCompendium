@@ -1,10 +1,14 @@
-
+import "./ItemCard.css"
 
 const ItemCard = ({image, name}) => {
+    const capitalize = (string) => {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+
     return (
-        <div>
-            <img src={image} alt={name}/>
-            <p>{name}</p>
+        <div className="item-card">
+            <img className="item-image" src={image} alt={name}/>
+            <p>{capitalize(name)}</p>
         </div>
     )
 }

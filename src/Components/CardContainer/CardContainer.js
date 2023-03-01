@@ -1,4 +1,5 @@
 import ItemCard from "../ItemCard/ItemCard"
+import "./CardContainer.css"
 
 const CardContainer = ({items}) => {
     const itemCards = items.map(item => {
@@ -11,7 +12,7 @@ const CardContainer = ({items}) => {
         )
     })
     return (
-        <div>
+        <div className="card-container">
             {itemCards}
         </div>
     )
