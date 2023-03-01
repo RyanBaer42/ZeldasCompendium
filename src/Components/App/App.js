@@ -12,7 +12,6 @@ function App() {
       .then(data => {
         setItems(data)
         setLoading(false)
-        console.log(items)
       })
       .catch(error => {
         setError(error)
