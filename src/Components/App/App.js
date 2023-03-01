@@ -4,6 +4,7 @@ import fetchData from '../../ApiCalls';
 import CardContainer from '../CardContainer/CardContainer';
 import NavBar from '../NavBar/NavBar';
 import SearchForm from '../SearchForm/SearchForm';
+import ItemDetails from '../ItemDetails/ItemDetails';
 import './App.css';
 
 function App() {
@@ -41,9 +42,7 @@ function App() {
             exact path="/:item"
             render={({match}) => {
               return (
-                <div>
-                  
-                </div>
+                <ItemDetails itemName={match.params.item}/>
               )
             }}/>
 
