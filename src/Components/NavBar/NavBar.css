@@ -1,0 +1,22 @@
+@font-face {
+    src: url(../../Fonts/HyliaSerif.ttf);
+    font-family: nos;
+}
+
+.website-logo {
+    width: 10%;
+}
+
+.NavBar {
+    background-color: #86a5a9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.website-name {
+    margin-top: 1vh;
+    font-family: nos;
+    color: #fdffe0;
+}
