@@ -1,7 +1,8 @@
 import { useEffect, useState,  } from 'react';
-
+import { Route, Switch } from 'react-router-dom';
 import fetchData from '../../ApiCalls';
 import CardContainer from '../CardContainer/CardContainer';
+import NavBar from '../NavBar/NavBar';
 import './App.css';
 
 function App() {
@@ -23,8 +24,8 @@ function App() {
   if (!loading){
     return (
       <div className='App'>
-        {/* <NavBar />
-        <SearchForm /> */}
+        <NavBar />
+        {/* <SearchForm /> */}
         <CardContainer items={items}/>
       </div>
     )
