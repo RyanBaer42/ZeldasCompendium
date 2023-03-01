@@ -1,8 +1,9 @@
-import { useEffect, useState,  } from 'react';
+import { useEffect, useState, } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import fetchData from '../../ApiCalls';
 import CardContainer from '../CardContainer/CardContainer';
 import NavBar from '../NavBar/NavBar';
+import SearchForm from '../SearchForm/SearchForm';
 import './App.css';
 
 function App() {
@@ -21,12 +22,32 @@ function App() {
       })
   }, [])
 
-  if (!loading){
+  if (!loading) {
     return (
       <div className='App'>
         <NavBar />
-        {/* <SearchForm /> */}
-        <CardContainer items={items}/>
+        <Switch>
+          <Route
+            exact
+            path="/"
+            render={() => (
+              <div>
+                <SearchForm />
+                <CardContainer items={items} />
+              </div>
+            )}
+          />
+          <Route
+            exact path="/:item"
+            render={({match}) => {
+              return (
+                <div>
+                  
+                </div>
+              )
+            }}/>
+
+        </Switch>
       </div>
     )
   }
