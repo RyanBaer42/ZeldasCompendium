@@ -7,10 +7,10 @@ const ItemCard = ({image, name}) => {
     }
 
     return (
-        <Link to={`/${name}`}>
+        <Link className="card-link" to={`/${name}`}>
             <div className="item-card">
                 <img className="item-image" src={image} alt={name}/>
-                <p>{capitalize(name)}</p>
+                <p className="card-name">{capitalize(name)}</p>
             </div>
         </Link>
     )

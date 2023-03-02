@@ -17,3 +17,11 @@
     margin-top: 5%;
     border-radius: 5px;
 }
+
+.card-link {
+    text-decoration: none;
+}
+
+.card-name {
+    color: black;
+}
