@@ -1,5 +1,11 @@
-const fetchData = () => {
-    return fetch('https://botw-compendium.herokuapp.com/api/v2/category/materials')
+const fetchData = (itemName) => {
+    let path;
+    if (!itemName){
+        path = 'category/materials'
+    } else {
+        path = `entry/${itemName}`
+    }
+    return fetch(`https://botw-compendium.herokuapp.com/api/v2/${path}`)
         .then(response => {
             if (response.ok) {
                 return response.json()
