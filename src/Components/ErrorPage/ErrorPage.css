@@ -1,0 +1,23 @@
+@font-face {
+    src: url(../../Fonts/HyliaSerif.ttf);
+    font-family: nos;
+}
+
+.error-text {
+    font-family: nos;
+    font-size: xx-large;
+}
+
+.ErrorPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error-return-button {
+    height: 5vh;
+    margin-bottom: 1vh;
+    background-color: #536f50;
+    color: #fdffe0;
+    border-radius: 5px;
+}
