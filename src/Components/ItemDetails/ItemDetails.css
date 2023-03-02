@@ -1,0 +1,65 @@
+@font-face {
+    src: url(../../Fonts/HyliaSerif.ttf);
+    font-family: nos;
+}
+
+.ItemDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-name {
+    font-family: nos;
+}
+
+.image-container {
+    background-color: 	#767676;
+    height: 50vh;
+    width: 27vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-bottom: 5vh;
+}
+
+.detail-item-image {
+    border-radius: 10px;
+    width: 80%;
+}
+
+.detail-pair {
+    display: flex;
+    width: 60vw;
+    gap: .5%;
+    margin-bottom: .5vh;
+}
+
+.detail-label {
+    background-color: #86a5a9;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-info {
+    background-color: #86a99e;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 45vw;
+    padding: 1%;
+    border: 5px solid #86a5a9
+}
+
+.label-text {
+    color: #fdffe0;
+    text-decoration: underline;
+}
+
+.deatail-text {
+    color: #fdffe0;
+}
