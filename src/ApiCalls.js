@@ -10,11 +10,14 @@ const fetchData = (itemName) => {
             if (response.ok) {
                 return response.json()
             } else if (response.status === 404) {
-                throw new Error('404')
+                throw new Error('404 Page not found');
             } else {
-                throw new Error(`An error occurred: status ${response.status}`);
+                throw new Error(`${response.status}`);
             }
         })
+        .catch(error => {
+            throw new Error(`An error occurred: ${error.message}`);
+        });
 }
 
 export default fetchData

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./ItemCard.css"
 
 const ItemCard = ({image, name}) => {
@@ -6,10 +7,12 @@ const ItemCard = ({image, name}) => {
     }
 
     return (
-        <div className="item-card">
-            <img className="item-image" src={image} alt={name}/>
-            <p>{capitalize(name)}</p>
-        </div>
+        <Link className="card-link" to={`/${name}`}>
+            <div className="item-card">
+                <img className="item-image" src={image} alt={name}/>
+                <p className="card-name">{capitalize(name)}</p>
+            </div>
+        </Link>
     )
 }
 

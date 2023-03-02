@@ -5,6 +5,7 @@ import CardContainer from '../CardContainer/CardContainer';
 import NavBar from '../NavBar/NavBar';
 import SearchForm from '../SearchForm/SearchForm';
 import ItemDetails from '../ItemDetails/ItemDetails';
+import ErrorPage from '../ErrorPage/ErrorPage';
 import './App.css';
 
 function App() {
@@ -19,11 +20,12 @@ function App() {
         setLoading(false)
       })
       .catch(error => {
-        setError(error)
+        setError(error.message)
+        setLoading(false)
       })
   }, [])
 
-  if (!loading) {
+  if (!loading && !error.length) {
     return (
       <div className='App'>
         <NavBar />
@@ -40,14 +42,17 @@ function App() {
           />
           <Route
             exact path="/:item"
-            render={({match}) => {
+            render={({ match }) => {
               return (
-                <ItemDetails itemName={match.params.item}/>
+                <ItemDetails itemName={match.params.item} />
               )
             }}/>
-
         </Switch>
       </div>
+    )
+  } else if (!loading && error.length){
+    return (
+      <ErrorPage error={error}/>
     )
   }
 }
