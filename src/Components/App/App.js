@@ -25,7 +25,7 @@ function App() {
       })
   }, [])
 
-  if (!loading && !error.length) {
+  if (!loading) {
     return (
       <div className='App'>
         <NavBar />
@@ -41,18 +41,24 @@ function App() {
             )}
           />
           <Route
-            exact path="/:item"
+            exact path="/item/:item"
             render={({ match }) => {
+              console.log(match.params)
               return (
                 <ItemDetails itemName={match.params.item} />
               )
             }}/>
+          <Route path={"*"} component={ErrorPage} />
         </Switch>
       </div>
     )
-  } else if (!loading && error.length){
+  } 
+  else if (!loading && error.length){
     return (
-      <ErrorPage error={error}/>
+      <div>
+        <NavBar />
+        <ErrorPage error={error}/>
+      </div>
     )
   }
 }

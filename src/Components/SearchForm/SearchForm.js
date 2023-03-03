@@ -15,7 +15,7 @@ const SearchForm = () => {
                         value={input}
                         onChange={(event) => setInput(event.target.value)}
                         required/>
-                    <Link to={`/${input}`}>
+                    <Link to={`/item/${input}`}>
                         <input 
                             type="submit" 
                             value="Search"

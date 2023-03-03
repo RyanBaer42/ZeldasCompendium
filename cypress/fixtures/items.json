@@ -1,0 +1,43 @@
+{
+    "data": [
+        {
+            "category": "materials",
+            "common_locations": [
+                "Gerudo Highlands",
+                "Hyrule Ridge"
+            ],
+            "cooking_effect": "speed up",
+            "description": "A mushroom that can grow almost anywhere but prefers ceilings and sheer cliffs. Cook it before eating to temporarily increase your movement speed.",
+            "hearts_recovered": 0.5,
+            "id": 182,
+            "image": "https://botw-compendium.herokuapp.com/api/v2/entry/rushroom/image",
+            "name": "rushroom"
+        },
+        {
+            "category": "materials",
+            "common_locations": [
+                "West Necluda",
+                "Lanayru Great Spring"
+            ],
+            "cooking_effect": "stealth up",
+            "description": "A plant that grows in the quieter areas of Hyrule. At night, it gives off a soft glow. Cook with it to increase your stealth.",
+            "hearts_recovered": 0,
+            "id": 198,
+            "image": "https://botw-compendium.herokuapp.com/api/v2/entry/blue_nightshade/image",
+            "name": "blue nightshade"
+        },
+        {
+            "category": "materials",
+            "common_locations": [
+                "Hebra Mountains",
+                "Mount Lanayru"
+            ],
+            "cooking_effect": "heat resistance",
+            "description": "Often found at the base of pine trees in cold climates, these mushrooms are cool to the touch and can be used to cook dishes that allow you to stay cool even in arid regions.",
+            "hearts_recovered": 0.5,
+            "id": 179,
+            "image": "https://botw-compendium.herokuapp.com/api/v2/entry/chillshroom/image",
+            "name": "chillshroom"
+        }
+    ]
+}
