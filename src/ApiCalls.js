@@ -16,7 +16,7 @@ const fetchData = (itemName) => {
             }
         })
         .catch(error => {
-            throw new Error(`An error occurred: ${error.message}`);
+            throw new Error(`: ${error.message}`);
         });
 }
 
