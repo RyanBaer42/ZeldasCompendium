@@ -10,13 +10,15 @@ const SearchForm = () => {
             <form className="form">
                 <label className="search-label">Search Items</label>
                 <div>
-                    <input 
+                    <input
+                        className="search-input" 
                         title="search"
                         value={input}
                         onChange={(event) => setInput(event.target.value)}
                         required/>
                     <Link to={`/item/${input}`}>
-                        <input 
+                        <input
+                            className="submit-input" 
                             type="submit" 
                             value="Search"
                         />

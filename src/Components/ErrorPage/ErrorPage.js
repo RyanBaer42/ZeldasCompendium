@@ -5,7 +5,7 @@ import "./ErrorPage.css"
 const ErrorPage = ({error}) => {
     return (
         <div className="ErrorPage">
-            <p className="error-text">{error}</p>
+            <p className="error-text">Something went wrong{error}</p>
             <Link to={"/"}>
                 <button className="error-return-button">Return to Main Page</button>
             </Link>

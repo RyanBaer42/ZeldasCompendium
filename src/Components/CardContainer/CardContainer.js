@@ -5,6 +5,7 @@ const CardContainer = ({items}) => {
     const itemCards = items.map(item => {
         return (
             <ItemCard 
+            id={item.id}
             key={item.id}
             image={item.image}
             name={item.name}
