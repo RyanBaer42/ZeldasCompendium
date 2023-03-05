@@ -25,6 +25,8 @@ function App() {
       })
   }, [])
 
+  const itemNames = items.map(item => item.name)
+
   if (!loading) {
     return (
       <div className='App'>
@@ -35,7 +37,7 @@ function App() {
             path="/"
             render={() => (
               <div>
-                <SearchForm />
+                <SearchForm itemNames={itemNames}/>
                 <CardContainer items={items} />
               </div>
             )}
@@ -43,7 +45,6 @@ function App() {
           <Route
             exact path="/item/:item"
             render={({ match }) => {
-              console.log(match.params)
               return (
                 <ItemDetails itemName={match.params.item} />
               )
