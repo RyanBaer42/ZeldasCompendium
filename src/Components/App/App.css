@@ -1,6 +1,9 @@
 .App { 
   background-color: #92c582;
-  height: 250vh;
+  height: 220vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .App-logo {
