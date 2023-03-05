@@ -1,0 +1,15 @@
+{
+    "data": {
+        "category": "materials",
+        "common_locations": [
+            "Great Hyrule Forest",
+            "Tabantha Frontier"
+        ],
+        "cooking_effect": "attack up",
+        "description": "This mushroom is known for the natural slice in its cap. Eating it fosters your competitive spirit. Use it when cooking to prepare a dish that will increase your strength.",
+        "hearts_recovered": 0.5,
+        "id": 183,
+        "image": "https://botw-compendium.herokuapp.com/api/v2/entry/razorshroom/image",
+        "name": "razorshroom"
+    }
+}
