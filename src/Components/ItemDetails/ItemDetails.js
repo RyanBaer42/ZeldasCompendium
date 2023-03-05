@@ -12,6 +12,17 @@ const ItemDetails = ({ itemName }) => {
         return string.charAt(0).toUpperCase() + string.slice(1);
     };
 
+    const cookingEffect = (cookingEffect) => {
+        return cookingEffect ? capitalize(cookingEffect) : "None";
+    };
+
+    const displayCommonLocations = (locationsArray) => {
+        if (locationsArray && locationsArray.length > 0) {
+          return locationsArray.join(", ");
+        }
+        return "Unknown";
+    };
+
     useEffect(() => {
         setLoading(true);
         setError("");
@@ -46,7 +57,7 @@ const ItemDetails = ({ itemName }) => {
                         <p className="label-text">Locations</p>
                     </div>
                     <div className="detail-info">
-                        <p className="detail-text">{item.common_locations}</p>
+                    <p className="detail-text">{displayCommonLocations(item.common_locations)}</p>
                     </div>
                 </div>
                 <div className="detail-pair">
@@ -62,7 +73,7 @@ const ItemDetails = ({ itemName }) => {
                         <p className="label-text">Cooking Effect</p>
                     </div>
                     <div className="detail-info">
-                        <p className="detail-text">{item.cooking_effect}</p>
+                        <p className="detail-text">{cookingEffect(item.cooking_effect)}</p>
                     </div>
                 </div>
             </div>
