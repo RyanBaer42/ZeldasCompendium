@@ -38,7 +38,7 @@ const ItemDetails = ({ itemName }) => {
                         <p className="label-text">Description</p>
                     </div>
                     <div className="detail-info">
-                        <p className="deatail-text">{item.description}</p>
+                        <p className="detail-text">{item.description}</p>
                     </div>
                 </div>
                 <div className="detail-pair">
@@ -46,7 +46,7 @@ const ItemDetails = ({ itemName }) => {
                         <p className="label-text">Locations</p>
                     </div>
                     <div className="detail-info">
-                        <p className="deatail-text">{item.common_locations}</p>
+                        <p className="detail-text">{item.common_locations}</p>
                     </div>
                 </div>
                 <div className="detail-pair">
@@ -54,7 +54,7 @@ const ItemDetails = ({ itemName }) => {
                         <p className="label-text">Hearts Recovered</p>
                     </div>
                     <div className="detail-info">
-                        <p className="deatail-text">{item.hearts_recovered}</p>
+                        <p className="detail-text">{item.hearts_recovered}</p>
                     </div>
                 </div>
                 <div className="detail-pair">
@@ -62,7 +62,7 @@ const ItemDetails = ({ itemName }) => {
                         <p className="label-text">Cooking Effect</p>
                     </div>
                     <div className="detail-info">
-                        <p className="deatail-text">{item.cooking_effect}</p>
+                        <p className="detail-text">{item.cooking_effect}</p>
                     </div>
                 </div>
             </div>

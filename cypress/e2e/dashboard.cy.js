@@ -9,7 +9,7 @@ describe('Dashboard', () => {
     cy.get('.website-logo')
       .should('be.visible')
     cy.get('.website-name')
-      .should('be.visible')
+      .contains(`Zelda's Compendium`)
   })
   it('should display a search bar and its label on page load', () => {
     cy.get('.search-label')
