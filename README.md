@@ -19,7 +19,7 @@ Zelda Breath of the Wild is a good starting point for people newer to the RPG ga
 
 
 Additionaly, if you want to create a local version of this app follow the instructions below
-- Fork the repository found here: https://github.com/RyanBaer42/rancid_tomatillos
+- Fork the repository found here: https://github.com/RyanBaer42/ZeldasCompendium
 - Clone down your new, forked repo. While cloning, name it what you want your local repo to be named, and run git clone.
 - cd into the repository
 - Install NPM packages by running npm install in your terminal
