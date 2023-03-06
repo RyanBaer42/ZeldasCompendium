@@ -43,7 +43,7 @@ I worked on this project for 7 days. I am in my 5th week in my third module in T
 ### Wins + Challenges:
 Some challenges included: 
 - Trying to successfully implement Router and Switch and create error components that work in tandem with Router. 
-- Utilizing useEffect and useState to practice using Hook reac-components
+- Utilizing useEffect and useState to practice using modern React Hooks
 
 
 Some wins included:
